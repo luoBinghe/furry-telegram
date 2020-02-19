@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hello Pizza</title>
+        <h1>Cadastro Hello Pizza!</h1>
+    </head>
+    
+    <body>
+        <form method="get" action="http://arquivo.devmedia.com.br/projeto/requisicao.php">
+            
+            <fieldset>      
+                <legend>Conta:</legend>
+                
+                <div>
+                  <label>Email: </label>
+                  <input type="email" required/>            
+                </div>
+            
+                <div>
+                  <label>Senha: </label>
+                  <input type="password" required/>
+                </div>     
+            </fieldset>
+            
+            <fieldset>             
+                <legend>Dados Pessoais:</legend>
+                
+                <div>
+                  <label>Nome: </label>
+                  <input type="text" placeholder="Ex: Bruno" required/>
+                </div>
+            
+                <div>
+                  <label>Telefone: </label>
+                  <input type="text" placeholder="Ex: (99) 99999-9999" required/>
+                </div>
+            
+                <div>
+                  <label>Sexo:</label>
+                  <input type="radio" value="masculino" name="sexo" checked/>
+                  <label>Masculino</label>
+                  <input type="radio" value="feminino" name="sexo"/>
+                  <label>Feminino</label>
+                  <input type="radio" value="outro" name="sexo"/>
+                  <label>Outro</label>
+                </div>
+            
+                <div>
+                  <label>Data de Nascimento:</label>
+                  <input type="date"/>
+                </div>
+            
+                <div>
+                  <label>Foto de Perfil:</label>
+                  <input type="file" accept="image/*"/>
+                </div>
+               
+            </fieldset>
+            
+            <fieldset>
+                
+                <legend>Endereço:</legend>
+                
+                <div>
+                <label>Rua: </label>
+                <input type="text" required/>
+            </div>
+            
+            <div>
+                <label>Complemento: </label>
+                <input type="text"/>
+            </div>
+            
+            <div>
+                <label>Número:</label>
+                <input type="number" min="1" max="9999" required/>
+            </div>
+            
+            <div>
+                <label>Cidade: </label>
+                <input type="text" required/>
+            </div>
+            
+            <div>
+                <label>Estado:</label>
+                <select>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="S">Sólido</option>
+                    <option value="L">Liquido</option>
+                </select>
+            </div>        
+            </fieldset>
+            
+            <fieldset>
+                <legend>Anuncio:</legend>
+                
+                <div>
+                  <label>Como conheceu o Hello Pizza?</label>
+                  <textarea maxlength="256" placeholder="Explique para a gente como conheceu o Hello Pizza:"></textarea>
+                </div>
+                
+                <div>          
+                  <input type="checkbox" checked/> 
+                  <label>Deseja receber ofertas por Email?</label>
+                </div>
+            </fieldset>
+            
+            <input type="submit" value="Enviar"/>
+            
+        </form>
+    </body>
+
+</html>
